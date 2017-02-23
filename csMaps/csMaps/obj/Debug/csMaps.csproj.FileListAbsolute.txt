@@ -1,0 +1,7 @@
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\bin\Debug\csMaps.dll
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\bin\Debug\csMaps.pdb
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\obj\Debug\csMaps.csprojResolveAssemblyReference.cache
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\obj\Debug\csMaps.dll
+C:\Users\Home\Source\Repos\cMaps\csMaps\csMaps\obj\Debug\csMaps.pdb
