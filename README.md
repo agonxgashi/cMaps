@@ -30,6 +30,9 @@ Get Location as Json string:
 
 
 ###**Some of most important features:**
+
+>#####**Get Latitude and Longitude... Or both of them as string**
+
  ```C#  
   csMap location = GMap.GetLocation("New York"); //Populates object with data
   
