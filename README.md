@@ -40,7 +40,18 @@ Get Location as Json string:
   string lat = location.Results.ElementAt(i).Geometry.Location.Latitude; // Ex: [ 42.6629138 ]
   string lng = location.Results.ElementAt(i).Geometry.Location.Longitude; // Ex: [ 21.1655028 ]
 ```
+>#####**Find distance between two points**
 
+
+```C#
+csMap location1 = GMap.GetLocation("New York");
+csMap location2 = GMap.GetLocation("California");
+
+LatLng l1 = location1.Results.ElementAt(0).Geometry.Location;
+LatLng l2 = location2.Results.ElementAt(0).Geometry.Location;
+
+double? distance = GMap.DistanceBetweenPlacesInKilometers(l1, l2); // [ 3923.11 ]
+```
 
 
 __________________________________
