@@ -3,13 +3,13 @@
 ###**About**
 This is a C# class library that uses public google maps API to give data for required location.
 
-####**What does it offer?**
+###**What does it offer?**
    1. Request data for a loaction by searching with it's name.
-    - Get location as an Object of type **_csMap_**
-    - Get location as **_JSON_** string
+    - Get location as an Object of type `csMap`
+    - Get location as `JSON` string
    
 
-####**Usage:**
+###**Usage:**
 
 Get Location and parse in object:
  ```C#  
@@ -21,7 +21,15 @@ Get Location as Json string:
   string location = GMap.GetLocationJsonString("New York");
 ```
 
-####**Some of most important features:**
+###**Returned status codes:**
+
+
+   - `OK` indicates the response contains a valid result.
+   - `NOT_FOUND` indicates that the origin and/or destination of this pairing could not be geocoded.
+   - `ZERO_RESULTS` indicates no route could be found between the origin and destination.
+
+
+###**Some of most important features:**
  ```C#  
   csMap location = GMap.GetLocation("New York"); //Populates object with data
   
@@ -34,6 +42,10 @@ Get Location as Json string:
 ```
 
 
-Started with :heart: | 2017-02-23
+
+__________________________________
+
+
+Started with :heart: by @agonxgashi
 
 [Twitter](https://www.twitter.com/agonxgashi) | [Facebook](https://www.facebook.com/agonxgashi)
