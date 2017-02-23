@@ -6,10 +6,10 @@ namespace csMaps
     public class csMap
     {
         [JsonProperty(PropertyName = "results")]
-        public List<Result> results = new List<Result>();
+        public List<Result> Results = new List<Result>();
 
         [JsonProperty(PropertyName = "status")]
-        public string status { get; set; }
+        public string Status { get; set; }
 
         [JsonProperty(PropertyName = "error_message")]
         public string ErrorMessage { get; set; }
@@ -24,7 +24,7 @@ namespace csMaps
         public string FormattedAddress { get; set; }
 
         [JsonProperty(PropertyName = "geometry")]
-        public Geometry geometry = new Geometry();
+        public Geometry Geometry = new Geometry();
 
         [JsonProperty(PropertyName = "partial_match")]
         public bool PartialMatch { get; set; }
@@ -34,7 +34,8 @@ namespace csMaps
 
         [JsonProperty(PropertyName = "types")]
         public List<string> Types = new List<string>();
-        
+
+        public string Coordinates => Geometry.Location.Latitude + " " + Geometry.Location.Longitude;
     }
 
     public class AddressComponents
