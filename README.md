@@ -21,6 +21,18 @@ Get Location as Json string:
   string location = GMap.GetLocationJsonString("New York");
 ```
 
+####**Some of most important features:**
+ ```C#  
+  csMap location = GMap.GetLocation("New York"); //Populates object with data
+  
+  string status = location.status; //Returned request status. 
+  
+  List<Result> results = location.results; //A list with all founded results
+  string coordinates = location.results.ElementAt(i).Coordinates; //Ex: [ 42.6629138 21.1655028 ]
+  string lat = location.Results.ElementAt(i).Geometry.Location.Latitude; // Ex: [ 42.6629138 ]
+  string lng = location.Results.ElementAt(i).Geometry.Location.Longitude; // Ex: [ 21.1655028 ]
+```
+
 
 Started with :heart: | 2017-02-23
 
