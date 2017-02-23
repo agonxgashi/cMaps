@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace csMaps
 {
-    class csMap
+    public class csMap
     {
         [JsonProperty(PropertyName = "results")]
         public List<Result> results = new List<Result>();
 
         [JsonProperty(PropertyName = "status")]
         public string status { get; set; }
+
+        [JsonProperty(PropertyName = "error_message")]
+        public string ErrorMessage { get; set; }
     }
 
-    class Result
+    public class Result
     {
         [JsonProperty(PropertyName = "address_components")]
         public List<AddressComponents> AddressComponents = new List<AddressComponents>();
@@ -38,7 +37,7 @@ namespace csMaps
         
     }
 
-    class AddressComponents
+    public class AddressComponents
     {
         [JsonProperty(PropertyName = "long_name")]
         public string LongName { get; set; }
@@ -53,7 +52,7 @@ namespace csMaps
 
 
 
-    class Geometry
+    public class Geometry
     {
         [JsonProperty(PropertyName = "bounds")]
         public Bounds Bounds { get; set; }
@@ -68,7 +67,7 @@ namespace csMaps
         public Bounds Viewport { get; set; }
     }
 
-    class Bounds
+    public class Bounds
     {
         [JsonProperty(PropertyName = "northeast")]
         public LatLng Northeast { get; set; }
@@ -77,7 +76,7 @@ namespace csMaps
         public LatLng Southwest { get; set; }
     }
 
-    class LatLng
+    public class LatLng
     {
         [JsonProperty(PropertyName = "lat")]
         public string Latitude { get; set; }
