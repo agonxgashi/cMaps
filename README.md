@@ -35,13 +35,13 @@ Get Location as Json string:
 
  ```C#  
   csMap location = GMap.GetLocation("New York"); //Populates object with data
-  
-  string status = location.status; //Returned request status. 
-  
-  List<Result> results = location.results; //A list with all founded results
-  string coordinates = location.results.ElementAt(i).Coordinates; //Ex: [ 42.6629138 21.1655028 ]
-  string lat = location.Results.ElementAt(i).Geometry.Location.Latitude; // Ex: [ 42.6629138 ]
-  string lng = location.Results.ElementAt(i).Geometry.Location.Longitude; // Ex: [ 21.1655028 ]
+
+ string status = location.Status; //Returned request status. 
+ List<csMaps.Result> results = location.Results; //A list with all founded results
+ 
+ string coordinates = location.Results.ElementAt(0).Coordinates; //Ex: [ 40.7127837 -74.0059413 ]
+ string lat = location.Results.ElementAt(0).Geometry.Location.Latitude; // Ex: [ 40.7127837 ]
+ string lng = location.Results.ElementAt(0).Geometry.Location.Longitude; // Ex: [ -74.0059413 ]
 ```
 >#####**Find distance between two points**
 
