@@ -5,8 +5,8 @@ This is a C# class library that uses public google maps API to give data for req
 
 ####**What does it offer?**
    1. Request data for a loaction by searching with it's name.
-    - Get location as ** csMap ** Object
-    - Get location as ** JSON ** string
+    - Get location as an Object of type **_csMap_**
+    - Get location as **_JSON_** string
    
 
 ####**Usage:**
