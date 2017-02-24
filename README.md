@@ -8,6 +8,12 @@ This is a C# class library that uses public google maps API to give data for req
     - Get location as an Object of type `csMap`
     - Get location as `JSON` string
    
+###**How do I get it?**
+   - Feel free to clone or fork this project on github
+   - If you're runing yout appliaction on .NET Core, you can install nuget package on visual studio
+
+> ##```PM> Install-Package CSMaps```
+
 
 ###**Usage:**
 
