@@ -1,21 +1,21 @@
 ## csMaps
 
-###**About**
+### **About**
 This is a C# class library that uses public google maps API to give data for required location.
 
-###**What does it offer?**
+### **What does it offer?**
    1. Request data for a loaction by searching with it's name.
     - Get location as an Object of type `csMap`
     - Get location as `JSON` string
    
-###**How do I get it?**
+### **How do I get it?**
    - Feel free to clone or fork this project on github
    - If you're runing yout appliaction on .NET Core, you can install nuget package on visual studio
 
-> ##```PM> Install-Package CSMaps```
+> ## ```PM> Install-Package CSMaps```
 
 
-###**Usage:**
+### **Usage:**
 
 Get Location and parse in object:
  ```C#  
@@ -27,7 +27,7 @@ Get Location as Json string:
   string location = GMap.GetLocationJsonString("New York");
 ```
 
-###**Returned status codes:**
+### **Returned status codes:**
 
 
    - `OK` indicates the response contains a valid result.
@@ -35,9 +35,9 @@ Get Location as Json string:
    - `ZERO_RESULTS` indicates no route could be found between the origin and destination.
 
 
-###**Some of most important features:**
+### **Some of most important features:**
 
->#####**Get Latitude and Longitude... Or both of them as string**
+>##### **Get Latitude and Longitude... Or both of them as string**
 
  ```C#  
   csMap location = GMap.GetLocation("New York"); //Populates object with data
@@ -49,7 +49,7 @@ Get Location as Json string:
  string lat = location.Results.ElementAt(0).Geometry.Location.Latitude; // Ex: [ 40.7127837 ]
  string lng = location.Results.ElementAt(0).Geometry.Location.Longitude; // Ex: [ -74.0059413 ]
 ```
->#####**Find distance between two points**
+>##### **Find distance between two points**
 
 
 ```C#
